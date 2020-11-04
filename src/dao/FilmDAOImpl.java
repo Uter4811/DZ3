@@ -11,8 +11,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @Repository
 public class FilmDAOImpl implements FilmDAO {
-    private static final AtomicInteger AUTO_ID = new AtomicInteger(0);
-    private static Map<Integer, Film> films = new HashMap<>();
+    public static final AtomicInteger AUTO_ID = new AtomicInteger(0);
+    public static Map<Integer, Film> films = new HashMap<>();
+
 
     static {
         Film film1 = new Film();
